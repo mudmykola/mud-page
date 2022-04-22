@@ -1,0 +1,200 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 16.7em 124.5em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.arrow-top:before {
+      background-position: 0em 0em;
+      width: 3.2em;
+      height: 3.2em;
+  }
+
+
+
+
+  .icon.calendar-icon:before {
+      background-position: 0em -3.2em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.css-icon:before {
+      background-position: 0em -4.7em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.digita-marketing-icon:before {
+      background-position: 0em -12.2em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.git:before {
+      background-position: 0em -19.7em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.gulp-icon:before {
+      background-position: 0em -27.2em;
+      width: 5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.home-icon:before {
+      background-position: 0em -34.7em;
+      width: 6.4em;
+      height: 6.4em;
+  }
+
+
+
+
+  .icon.html-icon:before {
+      background-position: 0em -41.1em;
+      width: 7.4em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.jquery-icon:before {
+      background-position: 0em -48.6em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.js-icon:before {
+      background-position: 0em -56.1em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.link-icon:before {
+      background-position: 0em -63.6em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+  .icon.logo-icon:before {
+      background-position: 0em -67.6em;
+      width: 16.7em;
+      height: 5em;
+  }
+
+
+
+
+  .icon.phone-icon:before {
+      background-position: 0em -72.6em;
+      width: 6.4em;
+      height: 6.4em;
+  }
+
+
+
+
+  .icon.pug:before {
+      background-position: 0em -79em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.sass-icon:before {
+      background-position: 0em -86.5em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.uxui-design-icon:before {
+      background-position: 0em -94em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.webdev-icon:before {
+      background-position: 0em -101.5em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.webpack-icon:before {
+      background-position: 0em -109em;
+      width: 7.5em;
+      height: 7.5em;
+  }
+
+
+
+
+  .icon.work-eyes-icon:before {
+      background-position: 0em -116.5em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+  .icon.work-link-icon:before {
+      background-position: 0em -120.5em;
+      width: 4em;
+      height: 4em;
+  }
+
+
+
+
+

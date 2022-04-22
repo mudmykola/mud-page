@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="img/sprite/css/sprite.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-inner">
+
+
+
+                <div class="header-inner__logo">
+                    <a href="#">
+                        <i class="icon logo-icon"></i>
+                    </a>
+                </div>
+                <nav class="header-inner__menu">
+                    <ul>
+                        <li>
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+
+                        <li>
+                            <a href="#service"> Services </a>
+                        </li>
+
+                        <li>
+                            <a href="#work"> Work </a>
+                        </li>
+                        <li>
+                            <a href="#contact"> Contact </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-inner__btn">
+                    <button>
+                        <a href="tel:+38 (097) 80-27-062"> Let`s Talk </a>
+                    </button>
+                </div>
+                <!-- mobile menu -->
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <a href="#about">About</a>
+                    <a href="#service">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <!-- end mobile menu -->
+            </div>
+        </div>
+    </div>
+
+    <!-- header content -->
+    <section class="content">
+        <div class="container">
+            <div class="content-inner">
+                <div class="content-inner__decor">
+                    <img src="img/header-decor.svg" alt="header-decor" />
+                </div>
+                <div class="content-inner__text">
+                    <h3>Hello! I’m Mykola Mud`</h3>
+                    <p>
+                        I am a Front-end developer from Ukraine with more than 1 year of experience. I develop adaptive, cross-browser websites using clean and as concise code as possible.
+                    </p>
+                    <div class="content-box">
+                        <button class="content-box__btn">
+                            <img src="img/icons/mail-icon.png" alt="mail-icon" />
+                            <a href="mail:mykola.mud@gmail.com"> Email me </a>
+                        </button>
+                        <div class="content-box__link">
+                            <img src="img/icons/download-icon.png" alt="download-icon" />
+                            <a href="img/cv.pdf" download> Download CV </a>
+                        </div>
+                    </div>
+                    <div class="content-social">
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/mud_web_dev"> + TWITTER </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mud-developer/"> + LINKEDIN </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/NikolassFrost/"> + FACEBOOK </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-inner__img">
+                    <img src="img/about-img.png" alt="about-img" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end header content -->
+
+    <!-- skills -->
+    <section class="skills">
+        <div class="container">
+            <div class="skills-inner">
+                <ul class="autoplay">
+                    <li>
+                        <span>
+                            <i class="icon html-icon"></i>
+                        </span>
+                        <p>HTML</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon sass-icon"></i>
+                        </span>
+                        <p>SCSS</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon pug"></i>
+                        </span>
+                        <p>PUG</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon gulp-icon"></i>
+                        </span>
+                        <p>GULP</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon git"></i>
+                        </span>
+                        <p>GIT</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon js-icon"></i>
+                        </span>
+                        <p>JS</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon css-icon"></i>
+                        </span>
+                        <p>CSS</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon jquery-icon"></i>
+                        </span>
+                        <p>JQUERY</p>
+                    </li>
+
+                    <li>
+                        <span>
+                            <i class="icon webpack-icon"></i>
+                        </span>
+                        <p>WEBPACK</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end skills -->
+    <!-- about -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="about-inner__img">
+                    <img src="img/abouts-img.png" alt="abouts-img" />
+                </div>
+                <div class="about-inner__skill">
+                    <!-- Tab links -->
+                    <div class="about-inner__tab">
+                        <button class="about-inner__tablinks active" onclick="openTabs(event, 'About')">
+                            About me
+                        </button>
+                        <button class="about-inner__tablinks" onclick="openTabs(event, 'Skills')">
+                            Skills
+                        </button>
+                        <button class="about-inner__tablinks" onclick="openTabs(event, 'EXPERIENCE')">
+                            EXPERIENCE
+                        </button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="About" class="about-inner__tabcontent animate__animated animate__headShake">
+                        <h3>About me</h3>
+                        <p>
+                            Hello friends, I am a web developer from Ukraine. Prior to web development, I worked in various fields, but I always liked to understand the code 'look under the hood', so I began to study the structure of writing and the logic of construction. Now I
+                            am a Front-end developer, albeit with a little time, but quite well versed in certain issues.
+                        </p>
+                        <div class="about-inner__lines global-lines"></div>
+                        <div class="about-inner__social">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <a href="https://www.linkedin.com/in/mud-developer/">
+                                            <img src="img/icons/in-icon.png" alt="in-icon" />
+                                        </a>
+                                      
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <a href="https://www.facebook.com/NikolassFrost/">
+                                            <img src="img/icons/fb-icon.png" alt="fb-icon" />
+                                        </a>
+                                       
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span>
+                                        <a href="https://github.com/mudmykola">
+                                            <img src="img/icons/github-icon.png" alt="git-icon" />
+                                        </a>
+                                       
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span>
+                                        <a href="https://www.instagram.com/mud.web.developer/">
+                                            <img src="img/icons/instagram-icon.png" alt="instagram-icon" />
+
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="Skills" class="about-inner__tabcontent animate__animated animate__headShake">
+                        <h3 class="about-skills__title">Skills</h3>
+                        <p class="about-skills__desc">
+                            Ability to develop usability sites, also have experience in visualizing and designing user interfaces, use flex and grid in development, always clean and concise code.
+                        </p>
+                        <div class="skills-progress">
+                            <div class="skills-progress__left">
+                                <ul>
+                                    <li>
+                                        <div class="progres-left__1">
+                                            <h3>HTML / CSS</h3>
+                                            <p>95%</p>
+                                        </div>
+
+                                        <progress value="95" max="100"></progress>
+                                    </li>
+
+                                    <li>
+                                        <div class="progres-left__2">
+                                            <h3>JS</h3>
+                                            <p>60%</p>
+                                        </div>
+                                        <progress value="60" max="100"></progress>
+                                    </li>
+
+                                    <li>
+                                        <div class="progres-left__3">
+                                            <h3>JQUERY</h3>
+                                            <p>55%</p>
+                                        </div>
+                                        <progress value="55" max="100"></progress>
+                                    </li>
+
+                                    <li>
+                                        <div class="progres-left__4">
+                                            <h3>GIT</h3>
+                                            <p>85%</p>
+                                        </div>
+                                        <progress value="85" max="100"></progress>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills-progress__right">
+                                <ul>
+                                    <li>
+                                        <div class="progres-right__1">
+                                            <h3>scss</h3>
+                                            <p>75%</p>
+                                        </div>
+                                        <progress value="75" max="100"></progress>
+                                    </li>
+
+                                    <li>
+                                        <div class="progres-right__2">
+                                            <h3>PUG</h3>
+                                            <p>70%</p>
+                                        </div>
+                                        <progress value="70" max="100"></progress>
+                                    </li>
+
+                                    <li>
+                                        <div class="progres-right__3">
+                                            <h3>GULP</h3>
+                                            <p>77%</p>
+                                        </div>
+                                        <progress value="77" max="100"></progress>
+                                    </li>
+
+                                    <li>
+                                        <div class="progres-right__4">
+                                            <h3>WEBPACK</h3>
+                                            <p>50%</p>
+                                        </div>
+                                        <progress value="50" max="100"></progress>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="EXPERIENCE" class="about-inner__tabcontent animate__animated animate__headShake">
+                        <h3>EXPERIENCE</h3>
+                        <div class="experience">
+                            <div class="experience-inner">
+                                <ul class="experience-inner__list">
+                                    <li class="experience-inner__item">
+                                        <div class="experience-inner__date">
+                                            <span>
+                                                <i class="icon calendar-icon"></i>
+                                            </span>
+                                            <p>April 2019</p>
+                                        </div>
+                                        <h3>Website prototype development</h3>
+                                        <p>
+                                            Color and font selected, easy and convenient content management system developed. Convenient and not heavy interface.
+                                        </p>
+                                        <a href="https://mudmykola.github.io/hofner/"> Github </a>
+                                    </li>
+
+                                    <li class="experience-inner__item">
+                                        <div class="experience-inner__date">
+                                            <span>
+                                                <i class="icon calendar-icon"></i>
+                                            </span>
+                                            <p>June 2020</p>
+                                        </div>
+                                        <h3>Website development for a furniture store</h3>
+                                        <p>
+                                            Design development, additional code was written and sent to the server. Adaptability and cross-browser were present.
+                                        </p>
+                                        <a href="https://mudmykola.github.io/golden-egg/"> Github </a>
+                                    </li>
+
+                                    <li class="experience-inner__item">
+                                        <div class="experience-inner__date">
+                                            <span>
+                                                <i class="icon calendar-icon"></i>
+                                            </span>
+                                            <p>May 2021-Present</p>
+                                        </div>
+                                        <h3>I am a freelancer, looking for projects</h3>
+                                        <p>
+                                            Search for projects and implementation, from personal design development to code writing and integration into the CMS.
+                                        </p>
+                                        <a href="https://mudmykola.github.io/thor-film/"> Github </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-line global-lines"></div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- service -->
+    <section class="service" id="service">
+        <div class="container">
+            <div class="service-inner">
+                <h3>What Services you will Get from me!</h3>
+                <ul class="service-inner__list">
+                    <li class="service-inner__item">
+                        <div class="service-items">
+                            <div class="service-items__img">
+                                <span>
+                                    <i class="icon uxui-design-icon"></i>
+                                </span>
+                            </div>
+                            <h2>UI & UX Design</h2>
+                            <p>
+                                Website and mobile application design. I will develop a clear and user-friendly interface. I will choose the color scheme and font pair.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="service-inner__item">
+                        <div class="service-items">
+                            <div class="service-items__img">
+                                <span>
+                                    <i class="icon webdev-icon"></i>
+                                </span>
+                            </div>
+                            <h2>Web Development</h2>
+                            <p>
+                                Web development, adaptation and integration on wordpress. Using modern technology, and writing clean and valid code.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="service-inner__item">
+                        <div class="service-items">
+                            <div class="service-items__img">
+                                <span>
+                                    <i class="icon digita-marketing-icon"></i>
+                                </span>
+                            </div>
+                            <h2>digital marketing</h2>
+                            <p>
+                                I have a clear plan for the development and promotion of your product. Additionally, I will develop a layout and write code.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end service -->
+    <!-- counters -->
+    <section class="counters">
+        <div class="container">
+            <div class="counters-inner">
+                <ul>
+                    <li>
+                        <div class="counters-inner__img">
+                            <img src="img/icons/customers-icon.png" alt="customers-icon" />
+                        </div>
+                        <div class="counters-inner__number">
+                            <div class="counter counters-inner__cust" counterNum="500">
+                                0
+                            </div>
+                            <p>satisfied customers.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="counters-inner__img">
+                            <img src="img/icons/project-icon.png" alt="project-icon" />
+                        </div>
+                        <div class="counters-inner__number">
+                            <div class="counter counters-inner__cust" counterNum="50">
+                                0
+                            </div>
+                            <p>Project Completed</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="counters-inner__img">
+                            <img src="img/icons/cofee-icon.png" alt="cofee-icon" />
+                        </div>
+                        <div class="counters-inner__number">
+                            <div class="counter counters-inner__cust" counterNum="1000">
+                                0
+                            </div>
+                            <p>Cups of Coffee</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end counters -->
+    <!-- work -->
+    <div class="work" id="work">
+        <div class="container">
+            <div class="work-inner global-titles">
+                <h3>My Latest Work</h3>
+                <ul class="work-inner__list">
+                    <li>
+                        <div class="work-inner__img">
+                            <a href="https://mudmykola.github.io/pur/">
+                                <img src="img/work-img-1.png" alt="" />
+                                <img class="work-btn" src="img/icons/work-eyes-icon.svg" alt="work-eyes-icon" />
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="work-inner__img">
+                            <a href="img/work-preview-2.png">
+                                <img src="img/work-img-2.png" alt="" />
+                                <img class="work-btn" src="img/icons/work-eyes-icon.svg" alt="work-eyes-icon" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="work-inner__list">
+                    <li>
+                        <div class="work-inner__img">
+                            <a href="https://mudmykola.github.io/desire/">
+                                <img src="img/work-img-3.png" alt="" />
+                                <img class="work-btn" src="img/icons/work-eyes-icon.svg" alt="work-eyes-icon" />
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="work-inner__img">
+                            <a href="https://mudmykola.github.io/car-lottery/">
+                                <img src="img/work-img-4.png" alt="" />
+                                <img class="work-btn" src="img/icons/work-eyes-icon.svg" alt="work-eyes-icon" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="work-inner__list">
+                    <li>
+                        <div class="work-inner__img">
+                            <a href="img/work-preview-5.png">
+                                <img src="img/work-img-5.png" alt="" />
+                                <img class="work-btn" src="img/icons/work-eyes-icon.svg" alt="work-eyes-icon" />
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="work-inner__img">
+                            <a href="https://mudmykola.github.io/alivio-landing/">
+                                <img src="img/work-img-6.png" alt="" />
+                                <img class="work-btn" src="img/icons/work-eyes-icon.svg" alt="work-eyes-icon" />
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="work-lines global-lines"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end work -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <h3 class="contact-inner__title global-titles">Contact Me</h3>
+                <div class="contact-inner__form">
+                    <form action="#php" class="contact-form">
+                        <textarea name="contact-form__text" placeholder="Enter Message"></textarea>
+                        <div class="contact-form__name">
+                            <input type="text" placeholder="Enter last name" />
+                            <input type="text" placeholder="Enter first name" />
+                        </div>
+                        <div class="contact-form__mail">
+                            <input type="text" placeholder="Enter email" />
+                        </div>
+                        <button class="contact-form__btn">
+                            <img src="img/icons/mail-icon.png" alt="mail-icon" />
+                            <a href="#"> Send me </a>
+                        </button>
+                    </form>
+                    <div class="contact-inner__loc">
+                        <ul>
+                            <li>
+                                <img src="img/icons/home-icon.svg" alt="home-icon">
+                                <div class="contact-loc__text">
+                                    <h2>Ukraine, Khmelnytsky.</h2>
+                                    <p>Prospect Mira 102/2</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/icons/phone-icon.svg" alt="phone-icon">
+                                <div class="contact-loc__text">
+                                    <a href="tel:+38 (097) 80-27-062">+38 (097) 80-27-062</a>
+                                    <p>Mon to Fri 9am to 6pm</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/icons/two-mail-icon.png" alt="two-mail-icon">
+                                <div class="contact-loc__text">
+                                    <a href="mail:mykola.mud@gmail.com">
+                                        mykola.mud@gmail.com
+                                    </a>
+                                    <p>Send us your query anytime!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+</header>
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <p>
+                Copyright ©2022 All rights reserved | This template is made with by Mud`
+            </p>
+        </div>
+    </div>
+</div>
+<!-- end footer -->
+<!-- button top -->
+<a id="button-top">
+    <span>
+        <i class="icon arrow-top"></i>
+    </span>
+</a>
+<!-- end button top -->
+
+<body>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
